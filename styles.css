@@ -8519,3 +8519,108 @@ main > section h2 {
     transform: translateY(0);
   }
 }
+
+/* Mobile first-screen polish and simpler part labels. */
+#start-here .section-intro .eyebrow::before,
+#knowledge .section-intro .eyebrow::before,
+#register .section-intro .eyebrow::before,
+#decision-details .section-intro .eyebrow::before,
+#tools-store .section-intro .eyebrow::before,
+#channels .section-intro .eyebrow::before {
+  display: none;
+}
+
+.knowledge-library-head h3 {
+  white-space: nowrap;
+}
+
+.decision-card--broker h3 {
+  max-width: none;
+}
+
+.decision-card--broker h3 .broker-title-main,
+.decision-card--broker h3 .broker-title-sub {
+  display: block;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.decision-card--broker h3 .broker-title-main {
+  color: #fff8f2;
+}
+
+.decision-card--broker h3 .broker-title-sub {
+  color: var(--bronze-pale);
+  font-size: 0.84em;
+  line-height: 1.35;
+}
+
+@media (max-width: 620px) {
+  .hero__grid {
+    padding-top: 86px !important;
+    padding-bottom: 22px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.9rem, 8.7vw, 2.42rem);
+    line-height: 1.02;
+  }
+
+  .hero__lead {
+    margin-top: 14px;
+    line-height: 1.68;
+  }
+
+  .hero__actions {
+    margin-top: 22px;
+  }
+
+  .hero__note {
+    margin-top: 20px;
+  }
+
+  .hero__pill-row {
+    margin-top: 16px;
+  }
+
+  .hero-visual {
+    margin-top: 34px;
+  }
+
+  .hero-visual__mobile {
+    aspect-ratio: 1.55 / 1;
+    margin: 12px 0 14px;
+  }
+
+  .signal-strip__track {
+    min-height: 34px;
+  }
+
+  .knowledge-library-head h3 {
+    font-size: clamp(1.08rem, 5.2vw, 1.42rem);
+    letter-spacing: 0;
+  }
+
+  .decision-card--broker h3 .broker-title-sub {
+    font-size: 0.78em;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero__grid {
+    padding-top: 76px !important;
+  }
+
+  .hero__lead,
+  .hero__note span {
+    font-size: 0.88rem;
+  }
+
+  .knowledge-library-head h3 {
+    font-size: clamp(0.98rem, 4.65vw, 1.18rem);
+  }
+
+  .decision-card--broker h3 .broker-title-sub {
+    font-size: 0.7em;
+  }
+}
