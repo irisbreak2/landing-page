@@ -8468,3 +8468,64 @@ main > section h2 {
     font-size: 2.9rem;
   }
 }
+
+/* Move the compact sticky menu away from page content after scrolling. */
+@media (max-width: 860px) {
+  .site-header {
+    transition:
+      top 220ms ease,
+      right 220ms ease,
+      bottom 220ms ease,
+      left 220ms ease,
+      background-color 220ms ease,
+      border-color 220ms ease,
+      border-radius 220ms ease,
+      box-shadow 220ms ease,
+      backdrop-filter 220ms ease;
+  }
+
+  .site-header.is-scrolled {
+    z-index: 1300;
+    top: auto;
+    right: max(12px, env(safe-area-inset-right));
+    bottom: max(12px, env(safe-area-inset-bottom));
+    left: max(12px, env(safe-area-inset-left));
+    background: rgba(11, 10, 11, 0.92);
+    border: 1px solid rgba(240, 214, 192, 0.16);
+    border-radius: 999px;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.34);
+  }
+
+  .site-header.is-scrolled .nav {
+    min-height: 58px;
+    padding: 0 10px;
+  }
+
+  .site-header.is-scrolled .brand__logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .site-header.is-scrolled .brand__descriptor {
+    display: none;
+  }
+
+  .site-header.is-scrolled .nav-menu {
+    top: auto;
+    right: 0;
+    bottom: calc(100% + 10px);
+    left: 0;
+    max-height: min(68vh, 520px);
+    overflow-y: auto;
+    border-radius: 20px;
+    transform: translateY(12px);
+  }
+
+  .site-header.is-scrolled .nav-menu.is-open {
+    transform: translateY(0);
+  }
+
+  body.bottom-nav-active .line-float {
+    bottom: calc(84px + env(safe-area-inset-bottom));
+  }
+}
