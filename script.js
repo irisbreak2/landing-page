@@ -569,6 +569,24 @@ document.addEventListener("DOMContentLoaded", () => {
       action: "เปิด Instagram"
     },
     {
+      type: "ช่องทาง",
+      title: "Threads: irisbreak2",
+      description: "ติดตามบัญชีเทรดที่เชื่อมกับ Instagram บน Threads",
+      search: "threads irisbreak2 social ติดตาม บัญชีเทรด instagram ig",
+      url: "https://www.threads.com/@irisbreak2?igshid=NTc4MTIwNjQ2YQ==",
+      external: true,
+      action: "เปิด Threads"
+    },
+    {
+      type: "ช่องทาง",
+      title: "Facebook: Irisbreak2",
+      description: "ติดตามคอนเทนต์และอัปเดตจากไอริสบน Facebook",
+      search: "facebook fb irisbreak2 social ติดตาม เฟซบุ๊ก",
+      url: "https://www.facebook.com/share/1Dvrv4wH5r/?mibextid=wwXIfr",
+      external: true,
+      action: "เปิด Facebook"
+    },
+    {
       type: "E-book",
       title: "รับ E-book สำหรับเริ่มต้น",
       description: "ตอบคำถามสั้น ๆ แล้วทัก LINE หาไอริสพร้อมข้อความที่เตรียมไว้ เพื่อให้ไอริสดูแลต่อได้ตรงจุด",
