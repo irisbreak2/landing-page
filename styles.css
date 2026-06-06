@@ -8715,3 +8715,41 @@ main > section h2 {
       linear-gradient(180deg, rgba(26, 16, 18, 0.96), rgba(18, 13, 14, 0.98));
   }
 }
+
+/* Mobile social links: keep five channels balanced across two rows. */
+@media (max-width: 620px) {
+  .official-links__list {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    width: 100%;
+    gap: 10px;
+  }
+
+  .official-links__list a {
+    justify-content: center;
+    min-width: 0;
+    padding: 0 8px;
+    letter-spacing: 0;
+  }
+
+  .official-links__list a:nth-child(-n + 3) {
+    grid-column: span 2;
+  }
+
+  .official-links__list a:nth-child(n + 4) {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 360px) {
+  .official-links__list {
+    gap: 8px;
+  }
+
+  .official-links__list a {
+    min-height: 40px;
+    gap: 6px;
+    padding-inline: 6px;
+    font-size: 0.62rem;
+  }
+}
