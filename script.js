@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+﻿document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
   const mainContent = document.getElementById("main-content");
 
@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ["ดูรายละเอียดประเภทบัญชี", "https://global.connextfx.com/trading/trading-account"],
         ["ดูข้อมูล Leverage", "https://global.connextfx.com/trading-conditions/leverage"],
         ["ดูข้อมูล Regulation", "https://global.connextfx.com/about/regulation"],
-        ["เริ่มแชทกับไอริส", "https://lin.ee/J6u5PlE"]
+        ["เริ่มแชทกับไอริส", "https://lin.ee/Vvoo1ee"]
       ]
     }
   };
@@ -440,7 +440,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "ปรึกษาไอริสทาง LINE",
       description: "เริ่มจากคุยกับไอริสโดยตรง เพื่อให้ไอริสช่วยจัดทางที่เหมาะกับเป้าหมายของคุณ",
       search: "line ไลน์ ติดต่อ ปรึกษา iris เริ่มต้น",
-      url: "https://lin.ee/J6u5PlE",
+      url: "https://lin.ee/Vvoo1ee",
       external: true,
       action: "เปิด LINE"
     },
@@ -661,7 +661,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p class="eyebrow">NO DIRECT MATCH</p>
           <h4>ยังไม่เจอคำตอบที่ตรงกับคำค้นนี้</h4>
           <p>ลองเลือกหัวข้อหลักด้านบน หรือให้ไอริสช่วยจัดทางที่เหมาะกับคุณทาง LINE</p>
-          <a class="search-result__action" href="https://lin.ee/J6u5PlE" target="_blank" rel="noopener noreferrer">
+          <a class="search-result__action" href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer">
             เริ่มแชทกับไอริส
             ${icon("arrow-up-right")}
           </a>
@@ -1061,7 +1061,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <li>${icon("check")}<span>ไอริสจะช่วยเรียงลำดับข้อมูลให้เหมาะกับเป้าหมายและความพร้อมของคุณ</span></li>
     </ul>
     <div class="modal__actions">
-      <a class="button button--primary" href="https://lin.ee/J6u5PlE" target="_blank" rel="noopener noreferrer">
+      <a class="button button--primary" href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer">
         เปิด LINE คุยกับไอริส
         ${icon("arrow-up-right")}
       </a>
@@ -1086,7 +1086,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const ebookSummary = document.getElementById("ebook-line-message");
   const ebookCopyButton = document.querySelector("[data-copy-ebook-summary]");
   const ebookLineLink = document.getElementById("ebook-line-link");
-  const irisLineMessageBase = "https://line.me/R/oaMessage/%40326crutz/?";
+  const irisLineMessageBase = "https://lin.ee/Vvoo1ee";
 
   if (ebookForm && ebookResult && ebookSummary) {
     ebookForm.addEventListener("submit", (event) => {
@@ -1105,7 +1105,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ].join("\n");
       ebookSummary.textContent = lineMessage;
       if (ebookLineLink) {
-        ebookLineLink.href = `${irisLineMessageBase}${encodeURIComponent(lineMessage)}`;
+        ebookLineLink.href = irisLineMessageBase;
       }
       ebookResult.hidden = false;
       ebookResult.focus({ preventScroll: true });
