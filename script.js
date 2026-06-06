@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   [
     "#top",
     ".iris-entry",
+    ".proof-strip",
     "#start-here",
     "#pathway",
     "#ebook",
