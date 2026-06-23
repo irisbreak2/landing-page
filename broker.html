@@ -1,0 +1,585 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#160406" />
+  <title>Broker | BREAK 2 THE MONEY</title>
+  <meta
+    name="description"
+    content="BREAK 2 THE MONEY พื้นที่เรียนรู้ด้านการเทรด เครื่องมือช่วยวิเคราะห์ และช่องทางเริ่มต้นสำหรับคนที่อยากเข้าใจก่อนตัดสินใจ สร้างระบบ วินัย และความรับผิดชอบกับเงินของตัวเอง"
+  />
+  <link rel="stylesheet" href="styles.css?v=20260624-broker-order-2" />
+</head>
+<body class="broker-page">
+  <a class="skip-link" href="#main-content">ข้ามไปยังเนื้อหาหลัก</a>
+
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="icon-arrow-up-right" viewBox="0 0 24 24">
+      <path d="M7 17 17 7M8 7h9v9" />
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+      <path d="M5 12h14m-6-6 6 6-6 6" />
+    </symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24">
+      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
+    </symbol>
+    <symbol id="icon-chart" viewBox="0 0 24 24">
+      <path d="M3 3v18h18" />
+      <path d="m7 16 4-5 4 3 5-7" />
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="m5 12 4 4L19 6" />
+    </symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6" />
+    </symbol>
+    <symbol id="icon-chevron-left" viewBox="0 0 24 24">
+      <path d="m15 18-6-6 6-6" />
+    </symbol>
+    <symbol id="icon-chevron-right" viewBox="0 0 24 24">
+      <path d="m9 18 6-6-6-6" />
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24">
+      <path d="M18 6 6 18M6 6l12 12" />
+    </symbol>
+    <symbol id="icon-compass" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <path d="m16 8-3 5-5 3 3-5 5-3Z" />
+    </symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      <path d="m7 10 5 5 5-5M12 15V3" />
+    </symbol>
+    <symbol id="icon-grid" viewBox="0 0 24 24">
+      <rect width="7" height="7" x="3" y="3" rx="1" />
+      <rect width="7" height="7" x="14" y="3" rx="1" />
+      <rect width="7" height="7" x="14" y="14" rx="1" />
+      <rect width="7" height="7" x="3" y="14" rx="1" />
+    </symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24">
+      <path d="m12 2 9 5-9 5-9-5 9-5Z" />
+      <path d="m3 12 9 5 9-5M3 17l9 5 9-5" />
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24">
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </symbol>
+    <symbol id="icon-message" viewBox="0 0 24 24">
+      <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z" />
+    </symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24">
+      <path d="m5 3 14 9-14 9V3Z" />
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="7" />
+      <path d="m20 20-3.5-3.5" />
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+      <path d="m9 12 2 2 4-4" />
+    </symbol>
+    <symbol id="icon-target" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" />
+      <circle cx="12" cy="12" r="5" />
+      <circle cx="12" cy="12" r="1" />
+    </symbol>
+    <symbol id="icon-tool" viewBox="0 0 24 24">
+      <path d="M14.7 6.3a4 4 0 0 0-5 5L3 18v3h3l6.7-6.7a4 4 0 0 0 5-5L15 12l-3-3 2.7-2.7Z" />
+    </symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4 22a8 8 0 0 1 16 0" />
+    </symbol>
+    <symbol id="icon-wallet" viewBox="0 0 24 24">
+      <path d="M20 7V6a2 2 0 0 0-2-2H5a3 3 0 0 0 0 6h15v8a2 2 0 0 1-2 2H5a3 3 0 0 1-3-3V7" />
+      <path d="M16 14h.01" />
+    </symbol>
+  </svg>
+
+  <div class="truth-bar">
+    <div class="container truth-bar__inner">
+      <span class="truth-bar__label">TRUTH FIRST</span>
+      <p>เริ่มใหม่ได้ แต่ต้องมีระบบ เข้าใจก่อนเลือก และให้ไอริสพาคุณไปต่ออย่างเป็นขั้นตอน</p>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="เมนูหลัก">
+      <a class="brand" href="index.html#top" aria-label="BREAK 2 THE MONEY หน้าแรก">
+        <img class="brand__logo" src="break2-the-money-logo-240.webp" alt="" width="240" height="240" />
+        <span class="brand__text">
+          <span class="brand__word">BREAK <span>2</span> THE MONEY</span>
+          <span class="brand__descriptor">Trading Education<br />Tools & Knowledge Hub</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">เปิดเมนู</span>
+        <svg class="icon"><use href="#icon-menu"></use></svg>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html#top">เริ่มต้น</a>
+        <a href="ebook.html#ebook">E-book</a>
+        <a href="knowledge.html#knowledge">คำตอบพื้นฐาน</a>
+        <a href="broker.html#top">Broker</a>
+        <a href="private-class.html#top">Private Class</a>
+        <a href="tools.html#tools-store">เครื่องมือ</a>
+        <a href="channels.html#channels">ช่องทางการติดตาม</a>
+        <a class="button button--small button--light" href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer">
+          คุยกับไอริส
+          <svg class="icon"><use href="#icon-arrow-up-right"></use></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="subpage-hero" id="top">
+      <div class="container subpage-hero__inner reveal">
+        <p class="eyebrow eyebrow--light">03 / BROKER STEP</p>
+        <h1>สมัคร Broker ทีละขั้นตอน</h1>
+        <p>ดูคู่มือสมัคร ConnextFX ลิงก์สมัคร และแบบฟอร์มหลังสมัครในหน้าเดียว เพื่อลดการหลงขั้นตอน</p>
+        <div class="subpage-hero__actions">
+          <a class="button button--primary" href="broker.html#register">ดูขั้นตอน Broker<svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
+          <a class="button button--ghost" href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer">ถามไอริสทาง LINE<svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <nav class="step-nav" aria-label="เลือกหน้าหลักอื่น">
+      <div class="container step-nav__inner">
+        <a href="index.html#steps"><span>00</span> หน้าแรก</a>
+        <a href="ebook.html#ebook"><span>01</span> E-book</a>
+        <a href="knowledge.html#knowledge"><span>02</span> คำตอบ</a>
+        <a href="broker.html#top"><span>03</span> Broker</a>
+        <a href="private-class.html#top"><span>04</span> Class</a>
+        <a href="tools.html#tools-store"><span>05</span> Tools</a>
+        <a href="channels.html#channels"><span>06</span> ช่องทางการติดตาม</a>
+      </div>
+    </nav>
+
+    <section class="broker-overview section section--ink" id="broker-overview">
+      <div class="container">
+        <div class="decision-grid">
+          <article class="decision-card decision-card--broker reveal">
+            <div class="decision-card__head">
+              <div>
+                <p class="card-tag">BROKER / CONNEXTFX</p>
+                <h3><span class="broker-title-main">ConnextFX</span><span class="broker-title-sub">เปิดบัญชีอย่างมั่นใจ มีขั้นตอนชัดเจน</span></h3>
+              </div>
+              <span class="decision-card__stamp">INFO CHECKED<br />04 JUN 2026</span>
+            </div>
+            <p class="decision-card__lead">
+              ConnextFX ใช้เปิดบัญชีบน MT5 ไอริสแนะนำให้เริ่มจากบัญชีที่อ่านง่าย วางแผนเงินให้ชัด
+              แล้วค่อยให้ไอริสช่วยดูขั้นตอนต่อ
+            </p>
+
+            <details class="decision-disclosure broker-trust-panel">
+              <summary>
+                <span>ที่มาและความน่าเชื่อถือ</span>
+                <svg class="icon"><use href="#icon-chevron-down"></use></svg>
+              </summary>
+              <div>
+                <p class="decision-pros-cons__label">ที่มาและความน่าเชื่อถือ</p>
+                <h4>ข้อมูลที่ช่วยให้เลือก Broker ได้มั่นใจขึ้น</h4>
+                <p>
+                  ข้อมูลจาก Connext ระบุว่า Connext LTD เป็น Securities Dealer ใน Seychelles
+                  เลขทะเบียน 8434071-1 และได้รับอนุญาตจาก Financial Services Authority (FSA) เลขใบอนุญาต SD155
+                  โดยมีรายชื่อ Connext Ltd อยู่ในหน้า regulated entities ของ FSA Seychelles ด้วย
+                </p>
+              </div>
+              <div class="broker-trust-grid">
+                <article>
+                  <span>REGULATION</span>
+                  <strong>FSA Seychelles</strong>
+                  <small>สรุปกรอบกำกับดูแลไว้ให้เห็นที่มาอย่างชัดเจน เพื่อให้เริ่มจากความเข้าใจ ไม่ใช่เดาจากคำโฆษณา</small>
+                </article>
+                <article>
+                  <span>PLATFORM</span>
+                  <strong>MT5 + EA</strong>
+                  <small>เหมาะกับคนที่ต้องการแพลตฟอร์มสากล รองรับ EA, Hedging และบัญชีหลายประเภท</small>
+                </article>
+                <article>
+                  <span>DIFFERENCE</span>
+                  <strong>จุดเด่นคือบัญชีหลากหลาย</strong>
+                  <small>มี Standard, Ultra, Micro, Ultra Gold และ No Swap ให้เทียบตามแผน ไม่ใช่เลือกจากคำโฆษณาอย่างเดียว</small>
+                </article>
+              </div>
+              <p class="decision-disclosure__note">
+                ไอริสสรุปไว้เพื่อให้เห็นที่มาของ Broker ชัดขึ้น ก่อนเดินต่อในขั้นตอนสมัครและส่งข้อมูลให้ดูแล
+              </p>
+            </details>
+
+            <div class="broker-facts">
+              <div>
+                <span>PLATFORM</span>
+                <strong>MetaTrader 5</strong>
+                <small>ใช้งานคู่กับบัญชีจริงหรือ Demo ตามความพร้อม</small>
+              </div>
+              <div>
+                <span>ACCOUNT OPTIONS</span>
+                <strong>5 ประเภทบัญชี</strong>
+                <small>Micro, Ultra, Ultra Gold, No Swap และ Standard</small>
+              </div>
+              <div>
+                <span>MINIMUM DEPOSIT</span>
+                <strong>เปิดได้ตั้งแต่ $0</strong>
+                <small>แต่การฝึกจริงควรมีแผนเงินที่พอให้บริหารความเสี่ยงได้</small>
+              </div>
+              <div>
+                <span>LEVERAGE</span>
+                <strong>สูงสุด 1:500-1:2000</strong>
+                <small>กดดูรายละเอียดเพิ่มได้ด้านล่างเมื่ออยากเทียบบัญชี</small>
+              </div>
+            </div>
+
+            <div class="standard-note">
+              <p class="decision-pros-cons__label">บัญชีที่แนะนำสำหรับผู้เริ่มต้น</p>
+              <h4>Standard Account</h4>
+              <p>
+                เหมาะกับคนที่อยากเริ่มจากโครงสร้างที่เข้าใจง่าย ใช้งาน MT5 ได้ครบ
+                และให้ไอริสช่วยจัดขั้นตอนหลังสมัครต่อได้เป็นระบบ
+              </p>
+            </div>
+
+            <details class="decision-disclosure capital-plan">
+              <summary>
+                <span>กรอบวางแผนเงินก่อนเริ่มจริง</span>
+                <svg class="icon"><use href="#icon-chevron-down"></use></svg>
+              </summary>
+              <p class="decision-pros-cons__label">เลือกตัวเลขเพื่อเข้าใจขนาดแผน ไม่ใช่เพื่อรีบเติมเงิน</p>
+              <div class="capital-plan-grid">
+                <article>
+                  <span>เริ่มต้นอย่างมีระบบ</span>
+                  <strong>1,000 USD</strong>
+                  <small>พอให้ฝึก Position, Risk และ Journal ได้เห็นภาพกว่าเงินเล็กเกินไป</small>
+                </article>
+                <article>
+                  <span>จริงจังขึ้นระดับกลาง</span>
+                  <strong>5,000 USD</strong>
+                  <small>เหมาะกับคนที่เริ่มมีแผน และอยากมีพื้นที่บริหารความเสี่ยงมากขึ้น</small>
+                </article>
+                <article>
+                  <span>วางระบบระยะยาว</span>
+                  <strong>10,000 USD</strong>
+                  <small>สำหรับคนที่พร้อมวางระบบเงิน แผนเทรด และการทบทวนต่อเนื่อง</small>
+                </article>
+                <article>
+                  <span>พอร์ตขนาดใหญ่</span>
+                  <strong>100,000 USD</strong>
+                  <small>ควรมีแผนความเสี่ยงและความเข้าใจเงื่อนไขบัญชีละเอียดก่อนใช้งาน</small>
+                </article>
+              </div>
+              <p class="decision-disclosure__note">ไอริสใช้ตัวเลขนี้เป็นกรอบคิดเรื่องแผนและความเสี่ยง ไม่ใช่คำแนะนำเฉพาะบุคคล</p>
+            </details>
+
+            <details class="decision-disclosure broker-accounts-panel">
+              <summary>
+                <span>รายละเอียดบัญชีทั้ง 5 ประเภท</span>
+                <svg class="icon"><use href="#icon-chevron-down"></use></svg>
+              </summary>
+              <p class="broker-accounts-note">Leverage แสดงเป็นอัตราทด ส่วน Spread สรุปเป็น “จุด” เพื่อให้อ่านง่ายขึ้น</p>
+              <div class="broker-account-grid">
+                <article>
+                  <span>STANDARD</span>
+                  <h4>เริ่มง่าย ดูแลต่อเป็นระบบ</h4>
+                  <p>Minimum First Deposit $0 / Spread เริ่ม 12 จุด / Leverage สูงสุด 1:2000 / MT5, EA, Hedging และ NBP</p>
+                </article>
+                <article>
+                  <span>ULTRA</span>
+                  <h4>สำหรับคนที่โฟกัสต้นทุนต่อออเดอร์</h4>
+                  <p>Minimum First Deposit $0 / Spread เริ่ม 6 จุด / Commission $6 ต่อ lot แบบ round / Leverage สูงสุด 1:2000 / MT5, EA, Hedging และ NBP</p>
+                </article>
+                <article>
+                  <span>ULTRA GOLD</span>
+                  <h4>สำหรับผู้ที่โฟกัส Gold</h4>
+                  <p>Minimum First Deposit $0 / Spread เริ่ม 16 จุด / Leverage สูงสุด 1:500 / Contract Size 100 / Maximum Lot 30 / MT5, EA, Hedging และ NBP</p>
+                </article>
+                <article>
+                  <span>NO SWAP</span>
+                  <h4>No Swap ตามกรอบบัญชี</h4>
+                  <p>Minimum First Deposit $0 / Spread เริ่ม 15 จุด / Leverage สูงสุด 1:2000 / ไม่มี Swap 5 วันแรกตามรายละเอียดบัญชี หลังจากนั้นอาจมี management fee</p>
+                </article>
+                <article>
+                  <span>MICRO</span>
+                  <h4>ยอดแสดงเป็น Cents</h4>
+                  <p>Minimum First Deposit $0 / Spread เริ่ม 14 จุด / Leverage สูงสุด 1:2000 / Maximum Lot 3000 cent lots / MT5, EA, Hedging และ NBP</p>
+                </article>
+              </div>
+              <p class="decision-disclosure__note">ข้อมูลบัญชีใช้เพื่อเทียบโครงสร้างก่อนสมัคร ไอริสจะช่วยพาดูอีกครั้งในขั้นตอนจริง</p>
+            </details>
+
+            <details class="decision-disclosure decision-pros-panel">
+              <summary>
+                <span>ข้อดีและสิ่งที่ควรรู้ก่อนเริ่ม</span>
+                <svg class="icon"><use href="#icon-chevron-down"></use></svg>
+              </summary>
+              <div class="decision-pros-cons">
+                <div>
+                  <p class="decision-pros-cons__label">ข้อดีที่ควรรู้</p>
+                  <ul>
+                    <li><svg class="icon"><use href="#icon-check"></use></svg><span>มีหลายบัญชีให้เลือก และเริ่มจาก Standard เพื่อให้ดูแลง่ายขึ้นได้</span></li>
+                    <li><svg class="icon"><use href="#icon-check"></use></svg><span>มี MT5 และบัญชี Demo สำหรับทำความเข้าใจระบบก่อน</span></li>
+                    <li><svg class="icon"><use href="#icon-check"></use></svg><span>บางบัญชีรองรับ EA / Hedging และ Negative Balance Protection</span></li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="decision-pros-cons__label">สิ่งที่ต้องรู้ให้ชัด</p>
+                  <ul>
+                    <li><svg class="icon"><use href="#icon-check"></use></svg><span>Leverage สูงทำให้ผลลัพธ์เหวี่ยงมากขึ้น ต้องมีแผนความเสี่ยงก่อนเปิด Order</span></li>
+                    <li><svg class="icon"><use href="#icon-check"></use></svg><span>Leverage อาจเปลี่ยนตาม Equity สินทรัพย์ ช่วงข่าว และสภาพตลาด</span></li>
+                    <li><svg class="icon"><use href="#icon-check"></use></svg><span>ควรรู้เรื่องฝาก ถอน ค่าใช้จ่าย และความเสี่ยงของ CFDs ก่อนวางเงินจริง</span></li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            <div class="decision-card__actions">
+              <a class="button button--primary" href="#register">เปิดขั้นตอนสมัคร 3 ข้อ <svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
+              <a class="text-link" href="https://global.connextfx.com/trading/trading-account" target="_blank" rel="noopener noreferrer">รายละเอียดประเภทบัญชี <svg class="icon"><use href="#icon-arrow-up-right"></use></svg></a>
+              <a class="text-link" href="https://global.connextfx.com/trading-conditions/leverage" target="_blank" rel="noopener noreferrer">ข้อมูล Leverage <svg class="icon"><use href="#icon-arrow-up-right"></use></svg></a>
+              <a class="text-link" href="https://global.connextfx.com/about/regulation" target="_blank" rel="noopener noreferrer">ที่มาและกรอบกำกับดูแล <svg class="icon"><use href="#icon-arrow-up-right"></use></svg></a>
+            </div>
+            <p class="decision-card__footnote">การเทรด CFDs และ Forex มีความเสี่ยงสูงจาก Leverage เนื้อหานี้ใช้เพื่อการเรียนรู้ขั้นตอนและการวางแผนเท่านั้น ไม่ใช่คำแนะนำการลงทุนเฉพาะบุคคล</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration-hub registration-hub--clear section section--soft" id="register">
+      <div class="container">
+        <div class="section-intro section-intro--split reveal">
+          <div>
+            <p class="eyebrow">03 / ขั้นตอน ConnextFX</p>
+            <h2>สมัคร Broker ทีละขั้นตอน</h2>
+          </div>
+          <p>ดูขั้นตอนสมัครทีละขั้น พร้อมแนวทางเตรียมข้อมูลหลังสมัคร</p>
+        </div>
+
+        <article class="clear-flow-card reveal">
+          <ol class="registration-steps">
+            <li>
+              <span>01</span>
+              <div>
+                <h4>ดูวิธีสมัคร</h4>
+                <p>เปิดคู่มือภาพก่อนเริ่มกรอกข้อมูล</p>
+                <button class="flow-action" type="button" data-open-broker-guide>
+                  ดูคู่มือภาพ
+                  <svg class="icon"><use href="#icon-grid"></use></svg>
+                </button>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h4>เปิดลิงก์สมัคร</h4>
+                <p>กรอกข้อมูลตามหน้าระบบ ConnextFX</p>
+                <a class="flow-action" href="https://clients.svg.connextfx.com/th/links/go/2117" target="_blank" rel="noopener noreferrer">
+                  สมัคร ConnextFX
+                  <svg class="icon"><use href="#icon-arrow-up-right"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h4>ส่งข้อมูลหลังสมัคร</h4>
+                <p>กรอกแบบฟอร์มเพื่อให้ไอริสรับข้อมูลและดูแลต่อ</p>
+                <a class="flow-action" href="https://forms.gle/ed2uJS32YavvkF8J8" target="_blank" rel="noopener noreferrer">
+                  กรอกแบบฟอร์ม
+                  <svg class="icon"><use href="#icon-arrow-up-right"></use></svg>
+                </a>
+              </div>
+            </li>
+          </ol>
+          <div class="clear-flow-card__footer">
+            <a class="text-link" href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer">
+              ต้องการให้ไอริสดูแลต่อ? ทัก LINE ได้เลย
+              <svg class="icon"><use href="#icon-arrow-up-right"></use></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="registration-hub registration-hub--details section section--soft" id="register-details" hidden aria-hidden="true">
+      <div class="container">
+        <article class="registration-feature reveal">
+          <div class="registration-feature__head">
+            <div>
+              <p class="card-tag">BROKER ONBOARDING / CONNEXTFX</p>
+              <h3>ศึกษาวิธีสมัคร ConnextFX แบบไม่หลงขั้นตอน</h3>
+              <p>เริ่มจากดูภาพคู่มือ 7 ขั้น สมัครผ่านช่องทางที่เตรียมไว้ แล้วกลับมากรอกแบบฟอร์มลงทะเบียนเพื่อให้ข้อมูลเข้าหลังบ้าน</p>
+            </div>
+            <button class="button button--ghost" type="button" data-open-broker-guide>
+              เปิดคู่มือภาพ 7 ขั้น
+              <svg class="icon"><use href="#icon-grid"></use></svg>
+            </button>
+          </div>
+          <ol class="registration-steps">
+            <li>
+              <span>01</span>
+              <div>
+                <h4>เปิดดูวิธีสมัครก่อน</h4>
+                <p>ดูภาพทีละขั้น ตั้งแต่เปิดลิงก์ กรอกข้อมูล ยืนยันอีเมล ไปจนถึงเลือกระบบ MT5</p>
+                <button class="flow-action" type="button" data-open-broker-guide>
+                  ดูคู่มือสมัคร
+                  <svg class="icon"><use href="#icon-arrow-right"></use></svg>
+                </button>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h4>สมัครผ่านลิงก์ ConnextFX</h4>
+                <p>เมื่อเข้าใจขั้นตอนแล้ว เปิดลิงก์สมัครและกรอกข้อมูลให้ครบตามหน้าระบบ</p>
+                <a class="flow-action" href="https://clients.svg.connextfx.com/th/links/go/2117" target="_blank" rel="noopener noreferrer">
+                  เปิดลิงก์สมัคร
+                  <svg class="icon"><use href="#icon-arrow-up-right"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h4>กรอกแบบฟอร์มลงทะเบียนหลังสมัคร</h4>
+                <p>ส่งข้อมูลที่จำเป็นให้ไอริสดูแลต่อ เช่น LINE ID, Username ConnextFX, Discord และหลักฐานที่ระบบร้องขอ</p>
+                <div class="flow-action-row">
+                  <button class="flow-action" type="button" data-open-broker-form-preview>
+                    ดูตัวอย่างฟอร์ม
+                    <svg class="icon"><use href="#icon-grid"></use></svg>
+                  </button>
+                  <a class="flow-action" href="https://forms.gle/ed2uJS32YavvkF8J8" target="_blank" rel="noopener noreferrer">
+                    กรอกแบบฟอร์มจริง
+                    <svg class="icon"><use href="#icon-arrow-up-right"></use></svg>
+                  </a>
+                </div>
+                <small class="flow-note">แบบฟอร์ม Broker อาจขอให้เข้าสู่ระบบ Google ก่อนกรอกข้อมูล</small>
+              </div>
+            </li>
+            <li>
+              <span>04</span>
+              <div>
+                <h4>แอด LINE และส่งภาพยืนยัน</h4>
+                <p>หลังสมัครเรียบร้อย ทัก LINE เพื่อรับข้อมูลเพิ่มเติมและให้ไอริสช่วยดูแลขั้นตอนต่อ</p>
+                <a class="flow-action" href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer">
+                  ทัก LINE ไอริส
+                  <svg class="icon"><use href="#icon-arrow-up-right"></use></svg>
+                </a>
+              </div>
+            </li>
+          </ol>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <div>
+          <p class="eyebrow eyebrow--light">TALK WITH IRIS</p>
+          <h2>พูดคุยและสอบถามได้โดยตรง</h2>
+          <p>ส่งคำถามทาง LINE แล้วค่อยเลือกขั้นตอนที่เหมาะกับคุณ</p>
+        </div>
+        <a class="button button--primary button--large" href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer">
+          เริ่มแชทกับไอริส
+          <img class="platform-icon" src="assets/platform-icons/line.svg" alt="" width="24" height="24" decoding="async" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand brand--footer" href="index.html#top" aria-label="BREAK 2 THE MONEY">
+          <img class="brand__logo" src="break2-the-money-logo-240.webp" alt="" width="240" height="240" loading="lazy" decoding="async" />
+          <span class="brand__text">
+            <span class="brand__word">BREAK <span>2</span> THE MONEY</span>
+            <span class="brand__descriptor">Trading Education<br />Tools & Knowledge Hub</span>
+          </span>
+        </a>
+        <p>พื้นที่เรียนรู้สำหรับคนที่อยากเข้าใจก่อนตัดสินใจ และเดินต่อแบบมีระบบ</p>
+      </div>
+      <div>
+        <p class="footer__label">เริ่มเป็นขั้นตอน</p>
+        <a href="ebook.html#ebook">รับ E-book</a>
+        <a href="knowledge.html#knowledge">คำตอบพื้นฐาน</a>
+        <a href="broker.html#top">ขั้นตอน Broker</a>
+        <a href="private-class.html#top">Private Class</a>
+        <a href="tools.html#tools-store">เครื่องมือ</a>
+      </div>
+      <div>
+        <p class="footer__label">ช่องทางสำคัญ</p>
+        <a href="channels.html#channels">ช่องทางติดตาม</a>
+        <a href="channels.html#faq">คำถามที่พบบ่อย</a>
+        <a href="channels.html#about">เกี่ยวกับไอริส</a>
+        <a href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer">เริ่มแชทกับไอริส</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> BREAK 2 THE MONEY. สงวนลิขสิทธิ์</p>
+      <p>การเทรดและการลงทุนมีความเสี่ยง เนื้อหานี้จัดทำเพื่อช่วยให้เข้าใจขั้นตอน วางแผน และเรียนรู้ก่อนใช้งานจริง ไม่ใช่คำแนะนำการลงทุนเฉพาะบุคคล</p>
+      <a class="footer__safety-link" href="https://market.sec.or.th/LicenseCheck/Search" target="_blank" rel="noopener noreferrer">
+        ตรวจข้อมูลเบื้องต้นสำหรับบริการในตลาดทุนไทยผ่าน SEC Check First
+        <svg class="icon"><use href="#icon-arrow-up-right"></use></svg>
+      </a>
+    </div>
+  </footer>
+
+  <a class="line-float" href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer" aria-label="เริ่มแชทกับไอริส">
+    <img class="platform-icon" src="assets/platform-icons/line.svg" alt="" width="24" height="24" />
+    <span>เริ่มแชทกับไอริส</span>
+  </a>
+
+  <div class="modal-shell" id="modal-shell" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" type="button" aria-label="ปิดหน้าต่าง" data-close-modal>
+        <svg class="icon"><use href="#icon-close"></use></svg>
+      </button>
+      <div class="modal__body" id="modal-body"></div>
+    </section>
+  </div>
+
+  <div class="image-lightbox" id="image-lightbox" hidden>
+    <div class="image-lightbox__backdrop" data-close-image-lightbox></div>
+    <section class="image-lightbox__dialog" role="dialog" aria-modal="true" aria-labelledby="image-lightbox-title">
+      <header class="image-lightbox__header">
+        <div>
+          <p class="eyebrow">STEP IMAGE / FULL VIEW</p>
+          <h2 id="image-lightbox-title">ขยายภาพขั้นตอน</h2>
+        </div>
+        <button class="image-lightbox__close" type="button" aria-label="ปิดภาพขยาย" data-close-image-lightbox>
+          <svg class="icon"><use href="#icon-close"></use></svg>
+        </button>
+      </header>
+
+      <div class="image-lightbox__stage">
+        <button class="image-lightbox__nav image-lightbox__nav--prev" type="button" aria-label="ดูภาพก่อนหน้า" data-image-lightbox-prev>
+          <svg class="icon"><use href="#icon-chevron-left"></use></svg>
+        </button>
+        <div class="image-lightbox__canvas">
+          <img id="image-lightbox-image" src="" alt="" />
+        </div>
+        <button class="image-lightbox__nav image-lightbox__nav--next" type="button" aria-label="ดูภาพถัดไป" data-image-lightbox-next>
+          <svg class="icon"><use href="#icon-chevron-right"></use></svg>
+        </button>
+      </div>
+
+      <footer class="image-lightbox__footer">
+        <span id="image-lightbox-count" aria-live="polite">ภาพ 01 / 01</span>
+        <a id="image-lightbox-original" href="" target="_blank" rel="noopener noreferrer">
+          เปิดรูปต้นฉบับเพื่อซูมเพิ่ม
+          <svg class="icon"><use href="#icon-arrow-up-right"></use></svg>
+        </a>
+      </footer>
+    </section>
+  </div>
+
+  <script src="script.js?v=20260623-finish-1"></script>
+</body>
+</html>

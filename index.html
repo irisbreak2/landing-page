@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#160406" />
+  <title>BREAK 2 THE MONEY | Trading Education & Tools Hub</title>
+  <meta
+    name="description"
+    content="BREAK 2 THE MONEY พื้นที่เรียนรู้ด้านการเทรด เครื่องมือช่วยวิเคราะห์ และช่องทางเริ่มต้นสำหรับคนที่อยากเข้าใจก่อนตัดสินใจ สร้างระบบ วินัย และความรับผิดชอบกับเงินของตัวเอง"
+  />
+  <link rel="stylesheet" href="styles.css?v=20260623-finish-1" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">ข้ามไปยังเนื้อหาหลัก</a>
+
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="icon-arrow-up-right" viewBox="0 0 24 24">
+      <path d="M7 17 17 7M8 7h9v9" />
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+      <path d="M5 12h14m-6-6 6 6-6 6" />
+    </symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24">
+      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
+    </symbol>
+    <symbol id="icon-chart" viewBox="0 0 24 24">
+      <path d="M3 3v18h18" />
+      <path d="m7 16 4-5 4 3 5-7" />
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="m5 12 4 4L19 6" />
+    </symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6" />
+    </symbol>
+    <symbol id="icon-chevron-left" viewBox="0 0 24 24">
+      <path d="m15 18-6-6 6-6" />
+    </symbol>
+    <symbol id="icon-chevron-right" viewBox="0 0 24 24">
+      <path d="m9 18 6-6-6-6" />
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24">
+      <path d="M18 6 6 18M6 6l12 12" />
+    </symbol>
+    <symbol id="icon-compass" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <path d="m16 8-3 5-5 3 3-5 5-3Z" />
+    </symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      <path d="m7 10 5 5 5-5M12 15V3" />
+    </symbol>
+    <symbol id="icon-grid" viewBox="0 0 24 24">
+      <rect width="7" height="7" x="3" y="3" rx="1" />
+      <rect width="7" height="7" x="14" y="3" rx="1" />
+      <rect width="7" height="7" x="14" y="14" rx="1" />
+      <rect width="7" height="7" x="3" y="14" rx="1" />
+    </symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24">
+      <path d="m12 2 9 5-9 5-9-5 9-5Z" />
+      <path d="m3 12 9 5 9-5M3 17l9 5 9-5" />
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24">
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </symbol>
+    <symbol id="icon-message" viewBox="0 0 24 24">
+      <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z" />
+    </symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24">
+      <path d="m5 3 14 9-14 9V3Z" />
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="7" />
+      <path d="m20 20-3.5-3.5" />
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+      <path d="m9 12 2 2 4-4" />
+    </symbol>
+    <symbol id="icon-target" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" />
+      <circle cx="12" cy="12" r="5" />
+      <circle cx="12" cy="12" r="1" />
+    </symbol>
+    <symbol id="icon-tool" viewBox="0 0 24 24">
+      <path d="M14.7 6.3a4 4 0 0 0-5 5L3 18v3h3l6.7-6.7a4 4 0 0 0 5-5L15 12l-3-3 2.7-2.7Z" />
+    </symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4 22a8 8 0 0 1 16 0" />
+    </symbol>
+    <symbol id="icon-wallet" viewBox="0 0 24 24">
+      <path d="M20 7V6a2 2 0 0 0-2-2H5a3 3 0 0 0 0 6h15v8a2 2 0 0 1-2 2H5a3 3 0 0 1-3-3V7" />
+      <path d="M16 14h.01" />
+    </symbol>
+  </svg>
+
+  <div class="truth-bar">
+    <div class="container truth-bar__inner">
+      <span class="truth-bar__label">TRUTH FIRST</span>
+      <p>เริ่มใหม่ได้ แต่ต้องมีระบบ เข้าใจก่อนเลือก และให้ไอริสพาคุณไปต่ออย่างเป็นขั้นตอน</p>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="เมนูหลัก">
+      <a class="brand" href="index.html#top" aria-label="BREAK 2 THE MONEY หน้าแรก">
+        <img class="brand__logo" src="break2-the-money-logo-240.webp" alt="" width="240" height="240" />
+        <span class="brand__text">
+          <span class="brand__word">BREAK <span>2</span> THE MONEY</span>
+          <span class="brand__descriptor">Trading Education<br />Tools & Knowledge Hub</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">เปิดเมนู</span>
+        <svg class="icon"><use href="#icon-menu"></use></svg>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html#top">เริ่มต้น</a>
+        <a href="ebook.html#ebook">E-book</a>
+        <a href="knowledge.html#knowledge">คำตอบพื้นฐาน</a>
+        <a href="broker.html#top">Broker</a>
+        <a href="private-class.html#top">Private Class</a>
+        <a href="tools.html#tools-store">เครื่องมือ</a>
+        <a href="channels.html#channels">ช่องทางการติดตาม</a>
+        <a class="button button--small button--light" href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer">
+          คุยกับไอริส
+          <svg class="icon"><use href="#icon-arrow-up-right"></use></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="hero__texture" aria-hidden="true"></div>
+      <div class="hero__grid container">
+        <div class="hero__content reveal">
+          <p class="eyebrow eyebrow--light">
+            <span class="eyebrow__dot"></span>
+            BREAK 2 THE MONEY / BY IRIS
+          </p>
+          <h1>เข้าใจง่าย เทรดเป็นระบบ</h1>
+          <picture class="hero-visual__mobile">
+            <source type="image/webp" srcset="iris-podcast-480.webp 480w, iris-podcast-900.webp 900w" sizes="100vw" />
+            <img
+              src="iris-podcast-480.webp"
+              alt="Iris พูดคุยผ่านไมโครโฟนในบรรยากาศมืออาชีพ"
+              width="480"
+              height="720"
+              decoding="async"
+            />
+          </picture>
+          <p class="hero__lead">
+            ไอริสได้จัดเตรียมความรู้ เครื่องมือ และสิ่งสำคัญที่ช่วยให้คุณเริ่มเทรดได้
+            ก่อนค้นพบเส้นทางการเทรดของตัวเอง
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="ebook.html#ebook">
+              รับ E-book / ให้ไอริสจัดเส้นทาง
+              <svg class="icon"><use href="#icon-arrow-right"></use></svg>
+            </a>
+            <a class="button button--ghost" href="knowledge.html#knowledge">
+              ค้นหาคำตอบ
+              <svg class="icon"><use href="#icon-search"></use></svg>
+            </a>
+          </div>
+          <div class="hero__note">
+            <svg class="icon"><use href="#icon-shield"></use></svg>
+            <span>การเทรดมีความเสี่ยง เนื้อหานี้ช่วยให้คุณเรียนรู้ขั้นตอน วางแผน และเข้าใจก่อนเลือกทางเดินของตัวเอง</span>
+          </div>
+          <div class="hero__pill-row" aria-label="สิ่งที่ไอริสช่วยคุณได้">
+            <span>คู่เงินและทองคำ</span>
+            <span>คลังความรู้เป็นระบบ</span>
+            <span>ครอบครัวนักเทรด</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay-1" aria-label="ภาพ Iris ผู้สร้างพื้นที่เรียนรู้ด้านการเทรด">
+          <div class="hero-visual__frame">
+            <picture class="hero-visual__picture">
+              <source
+                type="image/webp"
+                srcset="iris-podcast-480.webp 480w, iris-podcast-900.webp 900w"
+                sizes="(max-width: 620px) 100vw, (max-width: 1080px) 520px, 430px"
+              />
+              <img
+                src="iris-podcast-900.webp"
+                alt="Iris พูดคุยผ่านไมโครโฟนในบรรยากาศมืออาชีพ"
+                width="900"
+                height="1350"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
+          </div>
+          <div class="hero-visual__topline">
+            <span>THE BREAK 2 STANDARD</span>
+            <span>01 / DISCIPLINE</span>
+          </div>
+          <div class="hero-visual__card hero-visual__card--left">
+            <span class="mini-label">THINK BEFORE TRADE</span>
+            <strong>Plan <i></i> Risk <i></i> Review</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="signal-strip">
+        <div class="signal-strip__track">
+          <div class="signal-strip__group">
+            <span>KNOWLEDGE</span><i></i><span>DISCIPLINE</span><i></i><span>RISK AWARENESS</span><i></i>
+            <span>DECISION QUALITY</span><i></i><span>STANDARD ACCOUNT</span><i></i><span>MONEY PLAN</span><i></i>
+            <span>IRIS CARE</span><i></i><span>LONG-TERM CARE</span><i></i>
+          </div>
+          <div class="signal-strip__group" aria-hidden="true">
+            <span>KNOWLEDGE</span><i></i><span>DISCIPLINE</span><i></i><span>RISK AWARENESS</span><i></i>
+            <span>DECISION QUALITY</span><i></i><span>STANDARD ACCOUNT</span><i></i><span>MONEY PLAN</span><i></i>
+            <span>IRIS CARE</span><i></i><span>LONG-TERM CARE</span><i></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-ebook-preview section" id="ebook-preview" aria-label="E-book สำหรับผู้เริ่มต้น">
+      <div class="container home-ebook-preview__grid">
+        <figure class="home-ebook-preview__media reveal">
+          <div class="ebook-book" role="img" aria-label="ปก E-book สำหรับผู้เริ่มต้น BREAK 2 THE MONEY">
+            <span class="ebook-book__spine" aria-hidden="true"></span>
+            <div class="ebook-book__cover">
+              <span class="ebook-book__label">STARTER E-BOOK</span>
+              <img src="break2-the-money-logo-240.webp" alt="" width="240" height="240" loading="lazy" decoding="async" />
+              <strong class="ebook-book__title">E-book สำหรับผู้เริ่มต้น</strong>
+            </div>
+          </div>
+        </figure>
+        <div class="home-ebook-preview__content reveal reveal-delay-1">
+          <p class="eyebrow">START HERE / E-BOOK</p>
+          <h2>E-book สำหรับคนที่ยังไม่รู้ว่าจะเริ่มตรงไหน</h2>
+          <p>เริ่มจากภาพรวมก่อนเลือก Broker, Private Class หรือเครื่องมือ เพื่อให้คุณเห็นเส้นทางของตัวเองชัดขึ้นโดยไม่ต้องอ่านทุกเรื่องพร้อมกัน</p>
+          <ul>
+            <li><span>01</span><strong>เห็นจุดเริ่มของตัวเอง</strong></li>
+            <li><span>02</span><strong>เข้าใจภาพรวมก่อนเลือกทาง</strong></li>
+            <li><span>03</span><strong>เตรียมคำถามไว้คุยกับไอริสได้ตรงจุด</strong></li>
+          </ul>
+          <div class="home-ebook-preview__actions">
+            <a class="button button--primary" href="ebook.html#ebook">เปิดหน้ารับ E-book <svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
+            <a class="text-link" href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer">รับผ่าน LINE <svg class="icon"><use href="#icon-arrow-up-right"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-flow section section--soft" id="steps" aria-label="เลือกเส้นทางหลัก">
+      <div class="container">
+        <div class="section-intro section-intro--split reveal">
+          <div>
+            <p class="eyebrow">CHOOSE YOUR NEXT STEP</p>
+            <h2>เลือกสิ่งที่ต้องการตอนนี้</h2>
+          </div>
+          <p>ไม่ต้องอ่านทุกอย่างพร้อมกัน เลือกหนึ่งเส้นทางที่ตรงกับจุดที่คุณอยู่ แล้วไปต่อในหน้ารายละเอียดเฉพาะเรื่องนั้น</p>
+        </div>
+
+        <div class="home-flow__order reveal" aria-label="ลำดับแนะนำ">
+          <span>ลำดับที่อ่านง่าย</span>
+          <ol>
+            <li>E-book</li>
+            <li>คำตอบพื้นฐาน</li>
+            <li>Broker / Class</li>
+            <li>Tools</li>
+            <li>ถามต่อ</li>
+          </ol>
+        </div>
+
+        <div class="home-flow__grid">
+          <a class="home-flow__card home-flow__card--featured" href="ebook.html#ebook">
+            <span>01 / ถ้ายังไม่รู้จะเริ่มตรงไหน</span>
+            <strong>รับ E-book ก่อน</strong>
+            <small>เริ่มจากภาพรวม แล้วค่อยให้ไอริสช่วยจัดเส้นทางต่อใน LINE</small>
+          </a>
+          <a class="home-flow__card" href="knowledge.html#knowledge">
+            <span>02 / ถ้าอยากเข้าใจก่อนเลือก</span>
+            <strong>อ่านคำตอบพื้นฐาน</strong>
+            <small>รวมคำถามที่คนเริ่มเทรดมักสงสัย โดยอ่านเฉพาะเรื่องที่ต้องใช้ได้ทันที</small>
+          </a>
+            <a class="home-flow__card" href="broker.html#top">
+            <span>03 / ถ้าพร้อมดูขั้นตอนบัญชี</span>
+            <strong>ดู Broker ทีละขั้นตอน</strong>
+            <small>รวมคู่มือ ConnextFX ลิงก์สมัคร และแบบฟอร์มหลังสมัครไว้ในหน้าเดียว</small>
+          </a>
+          <a class="home-flow__card" href="private-class.html#top">
+            <span>04 / ถ้าอยากเรียนจริงจัง</span>
+            <strong>ดู Private Class</strong>
+            <small>ดูโครงสร้างคลาส ราคา และสิ่งที่เหมาะกับผู้เรียนก่อนตัดสินใจ</small>
+          </a>
+          <a class="home-flow__card" href="tools.html#tools-store">
+            <span>05 / ถ้ากำลังเลือกเครื่องมือ</span>
+            <strong>ดูชุดเครื่องมือ</strong>
+            <small>แยกข้อมูล GSH, TTS และชุดเครื่องมือใน Algo Prime ให้เลือกง่ายขึ้น</small>
+          </a>
+          <a class="home-flow__card" href="channels.html#channels">
+            <span>06 / ถ้าอยากติดตามหรือถามต่อ</span>
+            <strong>ดูช่องทางและ FAQ</strong>
+            <small>รวม LINE, YouTube, TikTok, Instagram, Threads, Facebook และคำถามที่พบบ่อย</small>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <div>
+          <p class="eyebrow eyebrow--light">TALK WITH IRIS</p>
+          <h2>พูดคุยและสอบถามได้โดยตรง</h2>
+          <p>ส่งคำถามทาง LINE แล้วค่อยเลือกขั้นตอนที่เหมาะกับคุณ</p>
+        </div>
+        <a class="button button--primary button--large" href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer">
+          เริ่มแชทกับไอริส
+          <img class="platform-icon" src="assets/platform-icons/line.svg" alt="" width="24" height="24" decoding="async" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand brand--footer" href="index.html#top" aria-label="BREAK 2 THE MONEY">
+          <img class="brand__logo" src="break2-the-money-logo-240.webp" alt="" width="240" height="240" loading="lazy" decoding="async" />
+          <span class="brand__text">
+            <span class="brand__word">BREAK <span>2</span> THE MONEY</span>
+            <span class="brand__descriptor">Trading Education<br />Tools & Knowledge Hub</span>
+          </span>
+        </a>
+        <p>พื้นที่เรียนรู้สำหรับคนที่อยากเข้าใจก่อนตัดสินใจ และเดินต่อแบบมีระบบ</p>
+      </div>
+      <div>
+        <p class="footer__label">เริ่มเป็นขั้นตอน</p>
+        <a href="ebook.html#ebook">รับ E-book</a>
+        <a href="knowledge.html#knowledge">คำตอบพื้นฐาน</a>
+        <a href="broker.html#top">ขั้นตอน Broker</a>
+        <a href="private-class.html#top">Private Class</a>
+        <a href="tools.html#tools-store">เครื่องมือ</a>
+      </div>
+      <div>
+        <p class="footer__label">ช่องทางสำคัญ</p>
+        <a href="channels.html#channels">ช่องทางติดตาม</a>
+        <a href="channels.html#faq">คำถามที่พบบ่อย</a>
+        <a href="channels.html#about">เกี่ยวกับไอริส</a>
+        <a href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer">เริ่มแชทกับไอริส</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> BREAK 2 THE MONEY. สงวนลิขสิทธิ์</p>
+      <p>การเทรดและการลงทุนมีความเสี่ยง เนื้อหานี้จัดทำเพื่อช่วยให้เข้าใจขั้นตอน วางแผน และเรียนรู้ก่อนใช้งานจริง ไม่ใช่คำแนะนำการลงทุนเฉพาะบุคคล</p>
+      <a class="footer__safety-link" href="https://market.sec.or.th/LicenseCheck/Search" target="_blank" rel="noopener noreferrer">
+        ตรวจข้อมูลเบื้องต้นสำหรับบริการในตลาดทุนไทยผ่าน SEC Check First
+        <svg class="icon"><use href="#icon-arrow-up-right"></use></svg>
+      </a>
+    </div>
+  </footer>
+
+  <a class="line-float" href="https://lin.ee/Vvoo1ee" target="_blank" rel="noopener noreferrer" aria-label="เริ่มแชทกับไอริส">
+    <img class="platform-icon" src="assets/platform-icons/line.svg" alt="" width="24" height="24" />
+    <span>เริ่มแชทกับไอริส</span>
+  </a>
+
+  <div class="modal-shell" id="modal-shell" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" type="button" aria-label="ปิดหน้าต่าง" data-close-modal>
+        <svg class="icon"><use href="#icon-close"></use></svg>
+      </button>
+      <div class="modal__body" id="modal-body"></div>
+    </section>
+  </div>
+
+  <div class="image-lightbox" id="image-lightbox" hidden>
+    <div class="image-lightbox__backdrop" data-close-image-lightbox></div>
+    <section class="image-lightbox__dialog" role="dialog" aria-modal="true" aria-labelledby="image-lightbox-title">
+      <header class="image-lightbox__header">
+        <div>
+          <p class="eyebrow">STEP IMAGE / FULL VIEW</p>
+          <h2 id="image-lightbox-title">ขยายภาพขั้นตอน</h2>
+        </div>
+        <button class="image-lightbox__close" type="button" aria-label="ปิดภาพขยาย" data-close-image-lightbox>
+          <svg class="icon"><use href="#icon-close"></use></svg>
+        </button>
+      </header>
+
+      <div class="image-lightbox__stage">
+        <button class="image-lightbox__nav image-lightbox__nav--prev" type="button" aria-label="ดูภาพก่อนหน้า" data-image-lightbox-prev>
+          <svg class="icon"><use href="#icon-chevron-left"></use></svg>
+        </button>
+        <div class="image-lightbox__canvas">
+          <img id="image-lightbox-image" src="" alt="" />
+        </div>
+        <button class="image-lightbox__nav image-lightbox__nav--next" type="button" aria-label="ดูภาพถัดไป" data-image-lightbox-next>
+          <svg class="icon"><use href="#icon-chevron-right"></use></svg>
+        </button>
+      </div>
+
+      <footer class="image-lightbox__footer">
+        <span id="image-lightbox-count" aria-live="polite">ภาพ 01 / 01</span>
+        <a id="image-lightbox-original" href="" target="_blank" rel="noopener noreferrer">
+          เปิดรูปต้นฉบับเพื่อซูมเพิ่ม
+          <svg class="icon"><use href="#icon-arrow-up-right"></use></svg>
+        </a>
+      </footer>
+    </section>
+  </div>
+
+  <script src="script.js?v=20260623-finish-1"></script>
+</body>
+</html>
